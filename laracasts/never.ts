@@ -25,3 +25,6 @@ const handleNever = (andy: Andy) => {
   }
   unreachableCaseError(andy);
 };
+
+// you can expect that T will never be E.
+type banedType<T, E> = T extends E ? never : T;
