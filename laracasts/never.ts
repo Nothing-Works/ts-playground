@@ -27,4 +27,4 @@ const handleNever = (andy: Andy) => {
 };
 
 // you can expect that T will never be E.
-type banedType<T, E> = T extends E ? never : T;
+type bannedType<T, E> = T extends E ? never : T;
